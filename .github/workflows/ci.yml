@@ -12,4 +12,7 @@ jobs:
           java-version: 18
       - name: Install dependencies, run tests
         run: gradle build
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+
 
